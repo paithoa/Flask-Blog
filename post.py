@@ -7,10 +7,7 @@ from helper_functions import *
 class Post:
 
     def __init__(self, default_config):
-        self.collection = default_config['POSTS_COLLECTION']
-        self.response = {'error': None, 'data': None}
-        self.debug_mode = default_config['DEBUG']
-
+        self.init= init;
     def get_posts(self, limit, skip, tag=None, search=None):
         self.response['error'] = None
         cond = {}
